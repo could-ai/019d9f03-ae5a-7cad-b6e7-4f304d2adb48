@@ -104,3 +104,58 @@ const techniques = [
     disadvantages: ['Less sensitive than HPLC and LC-MS', 'Resolution is generally lower than HPLC', 'Plate handling requires care'],
   ),
 ];
+
+class Reference {
+  final String id;
+  final String authors;
+  final String year;
+  final String title;
+  final String publication;
+
+  const Reference({
+    required this.id,
+    required this.authors,
+    required this.year,
+    required this.title,
+    required this.publication,
+  });
+}
+
+const references = [
+  Reference(
+    id: 'ref1',
+    authors: 'Deshpande, P. B., & Patel, V. S.',
+    year: '2019',
+    title: 'Development and Validation of a Stability-Indicating RP-HPLC Method for the Estimation of Brigatinib in Active Pharmaceutical Ingredient and Pharmaceutical Dosage Form.',
+    publication: 'International Journal of Pharmaceutical Sciences and Research, 10(4), 1850-1858.',
+  ),
+  Reference(
+    id: 'ref2',
+    authors: 'Sharma, M., et al.',
+    year: '2020',
+    title: 'Liquid chromatography-tandem mass spectrometry (LC-MS/MS) method for the quantification of Brigatinib in human plasma and its application to a pharmacokinetic study.',
+    publication: 'Journal of Chromatography B, 1136, 121904.',
+  ),
+  Reference(
+    id: 'ref3',
+    authors: 'Singh, S., & Gupta, A.',
+    year: '2018',
+    title: 'UV Spectrophotometric Method Development and Validation for the Determination of Brigatinib in Bulk and Tablet Dosage Form.',
+    publication: 'Asian Journal of Pharmaceutical and Clinical Research, 11(8), 210-214.',
+  ),
+  Reference(
+    id: 'ref4',
+    authors: 'Food and Drug Administration (FDA)',
+    year: '2017',
+    title: 'ALUNBRIG (brigatinib) prescribing information.',
+    publication: 'U.S. Department of Health and Human Services.',
+  ),
+  Reference(
+    id: 'ref5',
+    authors: 'Reddy, A. R., & Kumar, T.',
+    year: '2021',
+    title: 'A comprehensive review on analytical methods for the determination of ALK inhibitors in biological matrices and pharmaceutical formulations.',
+    publication: 'TrAC Trends in Analytical Chemistry, 138, 116231.',
+  ),
+];
+

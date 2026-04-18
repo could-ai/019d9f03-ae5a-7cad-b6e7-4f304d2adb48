@@ -15,6 +15,13 @@ class HomeScreen extends StatelessWidget {
             expandedHeight: 220.0,
             floating: false,
             pinned: true,
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.library_books, color: Colors.white),
+                tooltip: 'References',
+                onPressed: () => Navigator.pushNamed(context, '/references'),
+              ),
+            ],
             flexibleSpace: FlexibleSpaceBar(
               title: const Text(
                 'Brigatinib Analysis',

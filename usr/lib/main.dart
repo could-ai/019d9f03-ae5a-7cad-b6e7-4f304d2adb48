@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'home_screen.dart';
 import 'comparison_screen.dart';
 import 'detail_screen.dart';
+import 'references_screen.dart';
 
 void main() {
   runApp(const BrigatinibReviewApp());
@@ -46,6 +47,8 @@ class BrigatinibReviewApp extends StatelessWidget {
         } else if (settings.name == '/detail') {
           final techniqueId = settings.arguments as String;
           return MaterialPageRoute(builder: (context) => DetailScreen(techniqueId: techniqueId));
+        } else if (settings.name == '/references') {
+          return MaterialPageRoute(builder: (context) => const ReferencesScreen());
         }
         return null;
       },
